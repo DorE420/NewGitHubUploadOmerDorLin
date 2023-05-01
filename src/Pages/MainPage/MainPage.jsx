@@ -15,15 +15,18 @@ import DataTable from "react-data-table-component";
 
 
 const MainPage = () => {
+
   const urlGetEvents = "http://194.90.158.74/cgroup96/prod/api/GreenEvents/get";
   const urlPostEvent = "http://your-api-url.com/api/events/post";
   const urlDeleteEvent = "http://your-api-url.com/api/events/delete";
-  const [eventsUpdated, setEventsUpdated] = useState(false);
   const username = "your_username";
   const password = "your_password";
+
+
   const headers = new Headers();
   headers.append("Authorization", "Basic " + btoa(username + ":" + password));
 
+  const [eventsUpdated, setEventsUpdated] = useState(false);
   const [dataEventInfo, setDataEventInfo] = useState([]);
   const [dataUpdated, setDataUpdated] = useState(false);
   const refreshData = useCallback(() => setDataUpdated(!dataUpdated),[dataUpdated]);
@@ -131,8 +134,8 @@ const MainPage = () => {
       ),
     },
   ];
-
   const reversedColumns = [...columnsLeftData].reverse();
+
 
   useEffect(() => {
     fetch(urlGetEvents, {
@@ -198,8 +201,7 @@ const MainPage = () => {
       <div id="headerMainPage">
         <button
           className="buttonMainPage"
-          onClick={() => setIsAddingEvent(true)}
-        >
+          onClick={() => setIsAddingEvent(true)}>
           הוספת אירוע
         </button>
         <h1>לוח אירועים</h1>
@@ -241,7 +243,6 @@ const MainPage = () => {
 
           {/*<EventList lassName="headerDataListLeft" events={events} />*/}
           
-
         </div>
       </div>
     </div>

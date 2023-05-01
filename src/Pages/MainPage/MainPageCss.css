@@ -114,18 +114,153 @@ colgroup{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid #5391659f;
+}
+.innerEvents2 h1{
+    font-size: large;
 }
 .innerEvents3{
-    height: 70%;
-    background-color: violet;
-    display:list-item;
-
-
+    height: 85%;
 }
-.innerEvents4{
+
+/*Page 1 - Event Info*/
+.Step1Main{
+    height: 90%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.Step1MainInner1{
     height: 10%;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
     display: flex;
-    justify-content: center;
+    justify-content:right;
+    align-items: center;
+}
+.Step1MainInner1 h1{
+    font-size: small;
+    margin: 0px;
+}
+.Step1MainInner2{
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+    padding: 10px;
+}
+.divInfoInput input{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #5391659f;
+    width: 12rem;
+    max-width: 100%;
+    height: 2rem;
+    text-align: right;
+}
+
+.Step1Bottum{
+    height: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+
+
+/*Page 2 - Select Customer*/
+.Step2Main{
+    height: 90%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.Step2MainInner1{
+    height: 10%;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+.Step2MainInner1 h1{
+    font-size: small;
+    margin: 0px;
+}
+.Step2MainInner2{
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+}
+.Step2Bottum{
+    height: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.dataTableCustomers{
+    padding: 10px;
+}
+
+
+
+
+/*Page 3 - Select Customer*/
+.Step3Main{
+    height: 90%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.Step3MainInner1{
+    height: 10%;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+.Step3MainInner1 h1{
+    font-size: small;
+    margin: 0px;
+}
+.Step3MainInner2{
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+}
+.Step3Bottum{
+    height: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.textInputAmount{
+    width: 50px;
+    border-radius: 5px;
+}
+
+
+
+
+.innerEvents59{
+    height: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: left;
     align-items: center;
 }
 
